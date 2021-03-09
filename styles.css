@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 27em;
+    height: 25em;
+}
+
+/** HEADER **/
+
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 4.5em;
+    background-color: rgba(190,49,68,255);
+    border-bottom: 2px solid rgba(37, 37, 37, 0.822);
+}
+
+/**NAVBAR**/
+
+#navbar ul{
+    display: flex;
+    background-color: rgba(190,49,68,255);
+    justify-content: flex-end;
+    align-items: center;
+    height: 4.5em;
+    margin-right: 2em;
+}
+
+#navbar ul li {
+    list-style: none;
+    padding: 1.55em 2em;
+}
+
+#navbar ul li:hover {
+    background-color: rgba(69,86,125,255);
+}
+
+#navbar ul li a {
+    color: rgb(233, 233, 233);
+    font-size: 20px;
+}
+
+/**LINKS**/
+
+a {
+    text-decoration: none;
+}
+
+/**MAIN**/
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(44,45,47,255);
+}
+
+main section h1 {
+    color: rgba(240,240,240,255);
+    font-size: 60px;
+}
+
+main section p {
+    font-style: oblique;
+    font-size: 26px;
+    color: rgba(161,48,64,255);
+    font-weight: lighter;
+}
+
+/**---------------------**/
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7em 0 4em 0;
+    background-color: rgba(69,86,125,255);
+}
+
+#projects h3 {
+    padding: 0 1em 0 1em;
+    margin-bottom: 2em;
+    font-size: 38px;
+    color: rgb(233, 233, 233);
+    border-bottom: 1px solid white;
+}
+
+button {
+    background-color: rgba(48,56,65,255);
+    padding: 0.6em;
+    font-size: 18px;
+    font-weight: 500;
+    color: whitesmoke;
+    border: none;
+    border-radius: 2px;
+    margin-top: 2em;
+}
+
+section div article {
+    background-color: rgba(48,56,65,255);
+    height: 28.5em;
+    border-radius: 3px;
+}
+
+section div article p {
+    display: flex;
+    height: 2.6em;
+    align-items: center;
+    justify-content: center;
+    color: rgba(222,223,224,255);
+    font-style: normal;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: rgba(190,49,68,255);
+}
+
+/**GRID**/
+
+.project-tile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5em;
+}
+
+/**CONTACT**/
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(48,56,65,255);
+}
+
+#contact h2 {
+    font-size: 50px;
+    color: white;
+}
+
+#contact p {
+    color: white;
+    font-size: 18px;
+    margin: 1em 0 2em 0;
+}
+
+#contact nav ul li a {
+    color: white;
+    font-size: 18px;
+    font-style: oblique;
+    letter-spacing: 2px;
+}
+
+#contact nav ul li {
+    list-style: none;
+    margin: 0 1em;
+    text-shadow: 2px 2px 0.1px rgb(138, 80, 80);
+    word-spacing: 3px;
+}
+
+#contact nav ul {
+    display: flex;
+}
+
+#contact nav ul li a:hover {
+    color: rgb(197, 66, 66);
+    text-shadow: none;
+}
+
+/**FOOTER**/
+
+#footer {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 12em;
+    padding: 1.5em;
+    border-top: 3px solid rgba(190,49,68,255);
+    background-color: rgba(48,56,65,255);
+    color: white;
+}
+
+/**RESPONSIVE**/
+
+@media only screen and (max-width: 990px) {
+    
+    #navbar ul {
+        justify-content: center;
+    }
+
+    main section h1 {
+        font-size: 50px;
+    }
+
+    .project-tile {
+        grid-template-columns: 1fr;
+    }
+
+    #projects h3 {
+        font-size: 28px;
+    }
+
+    section nav ul {
+        flex-direction: column;
+    }
+
+    #contact h2 {
+        font-size: 40px;
+    }
+
+    section nav ul li {
+        height: 2em;
+    }
+
+    #footer {
+        grid-column-gap: 5em;
+    }
+
+
+}
